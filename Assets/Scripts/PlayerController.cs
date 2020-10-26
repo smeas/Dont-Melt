@@ -35,13 +35,13 @@ public class PlayerController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		Vector2 groundRight = -Vector2.Perpendicular(groundNormal);
-		rigidbody.AddForce(groundRight * new Vector2(move, 0));
+		Vector2 groundRight = -Vector2.Perpendicular(groundNormal); // rotate the ground normal 90 degrees clockwise
+		rigidbody.AddForce(groundRight * new Vector2(move, 0) * rigidbody.mass);
 		move = 0;
 
 		if (jump)
 		{
-			rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+			rigidbody.AddForce(jumpForce * rigidbody.mass * Vector2.up, ForceMode2D.Impulse);
 			jump = false;
 		}
 
