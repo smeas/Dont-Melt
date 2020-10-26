@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
 	private bool isGrounded;
 	private Vector2 groundNormal = Vector2.up;
 
-	private void Start()
+	private void Awake()
 	{
 		rigidbody = GetComponent<Rigidbody2D>();
 	}
@@ -29,17 +29,13 @@ public class PlayerController : MonoBehaviour
 			if (Input.GetButtonDown("Jump"))
 				jump = true;
 
-			RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 10, groundLayer);
-			if (hit.collider != null)
-			{
-				groundNormal = hit.normal;
-			}
+			UpdateGroundNormal();
 		}
 	}
 
 	private void FixedUpdate()
 	{
-		Vector2 groundRight = Quaternion.Euler(0, 0, -90) * groundNormal;
+		Vector2 groundRight = -Vector2.Perpendicular(groundNormal);
 		rigidbody.AddForce(groundRight * new Vector2(move, 0));
 		move = 0;
 
@@ -52,10 +48,19 @@ public class PlayerController : MonoBehaviour
 		isGrounded = groundCollider.IsTouchingLayers(groundLayer);
 	}
 
+	private void UpdateGroundNormal()
+	{
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 10, groundLayer);
+		if (hit.collider != null)
+		{
+			groundNormal = hit.normal;
+		}
+	}
+
 	// DEBUG
 	// private void OnDrawGizmos()
 	// {
-	// 	Vector3 right = Quaternion.Euler(0, 0, -90) * surfaceNormal;
+	// 	Vector3 right = -Vector2.Perpendicular(groundNormal);
 	// 	Debug.DrawRay(transform.position, right);
 	// }
 }
