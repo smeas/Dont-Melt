@@ -6,7 +6,9 @@ public class PlayerController : MonoBehaviour
 {
 	[SerializeField] private float speed = 500;
 	[SerializeField] private float jumpForce = 7;
-	[SerializeField] private float maxSpeed = 10;
+	[SerializeField] private float speedScale = 1;
+	[SerializeField, Tooltip("Limit the velocity of the rigidbody. Set to 0 for no limit.")]
+	private Vector2 maxVelocity = new Vector2(10, 10);
 
 	[Header("Collision")]
 	[SerializeField] private new Collider2D collider = null;
@@ -25,6 +27,12 @@ public class PlayerController : MonoBehaviour
 	private bool isGrounded;
 	private bool isUnderwater;
 	private Vector2 groundNormal = Vector2.up;
+
+	public float SpeedScale
+	{
+		get => speedScale;
+		set => speedScale = value;
+	}
 
 	private void Awake()
 	{
@@ -49,14 +57,13 @@ public class PlayerController : MonoBehaviour
 	private void FixedUpdate()
 	{
 		Vector2 groundRight = -Vector2.Perpendicular(groundNormal); // rotate the ground normal 90 degrees clockwise
-		rigidbody.AddForce(groundRight * new Vector2(move, 0) * rigidbody.mass);
+		rigidbody.AddForce(groundRight * new Vector2(move, 0) * (rigidbody.mass * speedScale));
 		move = 0;
 
 		if (jump)
 		{
-			rigidbody.AddForce(jumpForce * rigidbody.mass * Vector2.up, ForceMode2D.Impulse);
+			rigidbody.AddForce(Vector2.up * (jumpForce * rigidbody.mass * speedScale), ForceMode2D.Impulse);
 			jump = false;
-
 			onJump.Invoke();
 		}
 
@@ -92,7 +99,8 @@ public class PlayerController : MonoBehaviour
 	private void ApplyMaxSpeed()
 	{
 		Vector2 currentVelocity = rigidbody.velocity;
-		currentVelocity.x = Mathf.Clamp(currentVelocity.x, -maxSpeed, maxSpeed);
+		if (maxVelocity.x > 0) currentVelocity.x = Mathf.Clamp(currentVelocity.x, -maxVelocity.x, maxVelocity.x);
+		if (maxVelocity.y > 0) currentVelocity.y = Mathf.Clamp(currentVelocity.y, -maxVelocity.y, maxVelocity.y);
 		rigidbody.velocity = currentVelocity;
 	}
 
