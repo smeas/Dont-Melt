@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-	[SerializeField] private int health = 100;
-	[SerializeField] private int maxHealth = 100;
+	[SerializeField] private float health = 100;
+	[SerializeField] private float maxHealth = 100;
 
 	[Header("Scale")]
 	[SerializeField] private float minScale = 0.2f;
@@ -14,7 +14,7 @@ public class Player : MonoBehaviour
 
 	private PlayerController controller;
 
-	public int Health
+	public float Health
 	{
 		get => health;
 		set
@@ -24,12 +24,12 @@ public class Player : MonoBehaviour
 		}
 	}
 
-	public int MaxHealth => maxHealth;
+	public float MaxHealth => maxHealth;
 
 	/// <summary>
 	/// A value between zero and one (inclusive) representing the percentage of health left.
 	/// </summary>
-	public float HealthFraction => (float)Health / MaxHealth;
+	public float HealthFraction => Health / MaxHealth;
 
 	private void Start()
 	{
