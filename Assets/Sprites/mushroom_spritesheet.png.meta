@@ -1,0 +1,1198 @@
+fileFormatVersion: 2
+guid: d8190e1db0f153143b5d98a1d1f5e077
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5288426785731804449
+    second: shroomBrownAltLeft.png
+  - first:
+      213: -7081850283870966004
+    second: shroomBrownAltMid.png
+  - first:
+      213: 2899140715638939477
+    second: shroomBrownAltMidAlt.png
+  - first:
+      213: -7307883683670346017
+    second: shroomBrownAltRight.png
+  - first:
+      213: 4137367083949836206
+    second: shroomBrownAltSpotsLeft.png
+  - first:
+      213: 3201236378142606781
+    second: shroomBrownAltSpotsMid.png
+  - first:
+      213: 8260655877950949374
+    second: shroomBrownAltSpotsMidAlt.png
+  - first:
+      213: 7302845196154017920
+    second: shroomBrownAltSpotsRight.png
+  - first:
+      213: 2927697893895584776
+    second: shroomBrownLeft.png
+  - first:
+      213: 209837264553274326
+    second: shroomBrownMid.png
+  - first:
+      213: 5477978081590658241
+    second: shroomBrownMidAlt.png
+  - first:
+      213: -8483485793153052478
+    second: shroomBrownRight.png
+  - first:
+      213: -4699166277712817709
+    second: shroomBrownSpotsLeft.png
+  - first:
+      213: -8354405479608292952
+    second: shroomBrownSpotsMid.png
+  - first:
+      213: -3832503527193028134
+    second: shroomBrownSpotsMidAlt.png
+  - first:
+      213: -470150468334263474
+    second: shroomBrownSpotsRight.png
+  - first:
+      213: -980945498409060088
+    second: shroomRedAltLeft.png
+  - first:
+      213: 4122643089524149827
+    second: shroomRedAltMid.png
+  - first:
+      213: 467127095800522562
+    second: shroomRedAltMidAlt.png
+  - first:
+      213: -9139846522018752196
+    second: shroomRedAltRight.png
+  - first:
+      213: -618254282836499288
+    second: shroomRedLeft.png
+  - first:
+      213: 5428969630815563299
+    second: shroomRedMid.png
+  - first:
+      213: -6233381738686658367
+    second: shroomRedMidAlt.png
+  - first:
+      213: 7924757896518636158
+    second: shroomRedRight.png
+  - first:
+      213: 9103314364814354516
+    second: shroomTanAltLeft.png
+  - first:
+      213: -8163106638867772198
+    second: shroomTanAltMid.png
+  - first:
+      213: 1571622535904496877
+    second: shroomTanAltMidAlt.png
+  - first:
+      213: 5808491161527415201
+    second: shroomTanAltRight.png
+  - first:
+      213: -8399621859490408245
+    second: shroomTanLeft.png
+  - first:
+      213: 697198297574281122
+    second: shroomTanMid.png
+  - first:
+      213: 2927329007226358222
+    second: shroomTanMidAlt.png
+  - first:
+      213: -2945033618401408632
+    second: shroomTanRight.png
+  - first:
+      213: -6334763506857924811
+    second: stem.png
+  - first:
+      213: 5371952591181406225
+    second: stemBase.png
+  - first:
+      213: 1807002084854372659
+    second: stemBaseAlt.png
+  - first:
+      213: 3354992800914051100
+    second: stemCrown.png
+  - first:
+      213: 1137005001778313690
+    second: stemShroom.png
+  - first:
+      213: 6281218432082507553
+    second: stemTop.png
+  - first:
+      213: -7074175886053967487
+    second: stemTopAlt.png
+  - first:
+      213: -8137899222035780345
+    second: stemVine.png
+  - first:
+      213: -4128653986842136010
+    second: tallShroom_brown.png
+  - first:
+      213: -2121329999863482234
+    second: tallShroom_red.png
+  - first:
+      213: -5906435686434998364
+    second: tallShroom_tan.png
+  - first:
+      213: 7193650487803182504
+    second: tinyShroom_brown.png
+  - first:
+      213: -9197653015631021455
+    second: tinyShroom_red.png
+  - first:
+      213: 4972935150981683037
+    second: tinyShroom_tan.png
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shroomBrownAltLeft.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12d74307424446940800000000000000
+      internalID: 5288426785731804449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownAltMid.png
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0f2f5520b638bd90800000000000000
+      internalID: -7081850283870966004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownAltMidAlt.png
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55fd78dde11db3820800000000000000
+      internalID: 2899140715638939477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownAltRight.png
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd6b4fe228e259a90800000000000000
+      internalID: -7307883683670346017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownAltSpotsLeft.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea749303171ea6930800000000000000
+      internalID: 4137367083949836206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownAltSpotsMid.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db58f3966831d6c20800000000000000
+      internalID: 3201236378142606781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownAltSpotsMidAlt.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef7420111ceb3a270800000000000000
+      internalID: 8260655877950949374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownAltSpotsRight.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0889d66830be85560800000000000000
+      internalID: 7302845196154017920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownLeft.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c3e4f09b541a820800000000000000
+      internalID: 2927697893895584776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownMid.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db665e51ed79e200800000000000000
+      internalID: 209837264553274326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownMidAlt.png
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c44698aa00b50c40800000000000000
+      internalID: 5477978081590658241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownRight.png
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c01a0a5e9a944a80800000000000000
+      internalID: -8483485793153052478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownSpotsLeft.png
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1de6cea2539ceb0800000000000000
+      internalID: -4699166277712817709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownSpotsMid.png
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9ee56da703f0c80800000000000000
+      internalID: -8354405479608292952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownSpotsMidAlt.png
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad95a35f85630dac0800000000000000
+      internalID: -3832503527193028134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomBrownSpotsRight.png
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e43e3f7d3a0b979f0800000000000000
+      internalID: -470150468334263474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomRedAltLeft.png
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8093f47344bf262f0800000000000000
+      internalID: -980945498409060088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomRedAltMid.png
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34e4ec61c02963930800000000000000
+      internalID: 4122643089524149827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomRedAltMidAlt.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24766226e919b7600800000000000000
+      internalID: 467127095800522562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomRedAltRight.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c399b71630eb82180800000000000000
+      internalID: -9139846522018752196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomRedLeft.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4aaa261058b67f0800000000000000
+      internalID: -618254282836499288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomRedMid.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32e25258d13975b40800000000000000
+      internalID: 5428969630815563299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomRedMidAlt.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c8cc24a5549e79a0800000000000000
+      internalID: -6233381738686658367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomRedRight.png
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7217f8d1556afd60800000000000000
+      internalID: 7924757896518636158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomTanAltLeft.png
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4586871fe28755e70800000000000000
+      internalID: 9103314364814354516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomTanAltMid.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc47ae03c1d6be80800000000000000
+      internalID: -8163106638867772198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomTanAltMidAlt.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec069d9e568fc510800000000000000
+      internalID: 1571622535904496877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomTanAltRight.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a176dbcfe7eb9050800000000000000
+      internalID: 5808491161527415201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomTanLeft.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc8d7710c6c8e6b80800000000000000
+      internalID: -8399621859490408245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomTanMid.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2af0ce06822fca900800000000000000
+      internalID: 697198297574281122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomTanMidAlt.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec98c60f836ff9820800000000000000
+      internalID: 2927329007226358222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shroomTanRight.png
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889c99b07832127d0800000000000000
+      internalID: -2945033618401408632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stem.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53720ad47266618a0800000000000000
+      internalID: -6334763506857924811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stemBase.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1106b9b7b620d8a40800000000000000
+      internalID: 5371952591181406225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stemBaseAlt.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 339922082d2c31910800000000000000
+      internalID: 1807002084854372659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stemCrown.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10997a4d245f8e20800000000000000
+      internalID: 3354992800914051100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stemShroom.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9b6d6660477cf00800000000000000
+      internalID: 1137005001778313690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stemTop.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127f9e872ee5b2750800000000000000
+      internalID: 6281218432082507553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stemTopAlt.png
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1897e11238a73dd90800000000000000
+      internalID: -7074175886053967487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stemVine.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d21a426cf501f80800000000000000
+      internalID: -8137899222035780345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tallShroom_brown.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63236c1d21314b6c0800000000000000
+      internalID: -4128653986842136010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tallShroom_red.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 158
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688f1caba958f82e0800000000000000
+      internalID: -2121329999863482234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tallShroom_tan.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 229
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7f95d6900280ea0800000000000000
+      internalID: -5906435686434998364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tinyShroom_brown.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8adf2db410bf4d360800000000000000
+      internalID: 7193650487803182504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tinyShroom_red.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 371
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a3304405f5b5080800000000000000
+      internalID: -9197653015631021455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tinyShroom_tan.png
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 442
+        width: 70
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d57115d0c2a630540800000000000000
+      internalID: 4972935150981683037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
