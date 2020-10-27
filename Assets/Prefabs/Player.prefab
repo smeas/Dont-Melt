@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -8852912395638173073, guid: 7f2bb86c8af1cca4688c7a346e9ffa3b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.69803923}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -168,6 +168,13 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  onJump:
+    m_PersistentCalls:
+      m_Calls: []
+  minImpactPowerToRegister: 1
+  onImpact:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &2206824197655307170
 GameObject:
   m_ObjectHideFlags: 0
