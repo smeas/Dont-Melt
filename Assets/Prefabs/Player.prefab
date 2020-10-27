@@ -164,6 +164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 500
   jumpForce: 7
+  maxSpeed: 12
   groundCollider: {fileID: 2206824197655307171}
   groundLayer:
     serializedVersion: 2

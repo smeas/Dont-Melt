@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
 	[SerializeField] private float speed = 500;
 	[SerializeField] private float jumpForce = 7;
+	[SerializeField] private float maxSpeed = 10;
 	[SerializeField] private Collider2D groundCollider = null;
 	[SerializeField] private LayerMask groundLayer = default;
 
@@ -55,6 +56,8 @@ public class PlayerController : MonoBehaviour
 		}
 
 		isGrounded = groundCollider.IsTouchingLayers(groundLayer);
+
+		ApplyMaxSpeed();
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
@@ -78,6 +81,13 @@ public class PlayerController : MonoBehaviour
 		{
 			groundNormal = hit.normal;
 		}
+	}
+
+	private void ApplyMaxSpeed()
+	{
+		Vector2 currentVelocity = rigidbody.velocity;
+		currentVelocity.x = Mathf.Clamp(currentVelocity.x, -maxSpeed, maxSpeed);
+		rigidbody.velocity = currentVelocity;
 	}
 
 	// DEBUG
