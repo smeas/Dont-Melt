@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
+    [SerializeField] private float transitionTime = 2f;
     [Header("Scene names")]
     [Tooltip("Name of the scene to load. Make sure the scene is added in the build settings.")]
     public string gameScene = "SampleScene";
 
     public void LoadGame()
     {
-        SceneManager.LoadScene(gameScene, LoadSceneMode.Single);
+        StartCoroutine(LoadLevel(gameScene));
     }
 
     public void SelectLevel()
@@ -27,5 +28,11 @@ public class LoadScene : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    IEnumerator LoadLevel(string levelName)
+    {
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene(gameScene, LoadSceneMode.Single);
     }
 }
