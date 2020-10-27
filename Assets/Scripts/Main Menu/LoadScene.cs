@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
 {
-    [SerializeField] private float transitionTime = 2f;
+    [SerializeField] private float transitionTime = 1f;
     [Header("Scene names")]
     [Tooltip("Name of the scene to load. Make sure the scene is added in the build settings.")]
     public string gameScene = "SampleScene";

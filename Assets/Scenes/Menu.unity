@@ -4772,7 +4772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c89e5029769cbe4e9f85f344da96e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  transitionTime: 2
+  transitionTime: 1
   gameScene: Ice
 --- !u!1 &1671153981
 GameObject:
