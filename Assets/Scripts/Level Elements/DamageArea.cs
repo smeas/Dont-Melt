@@ -24,7 +24,7 @@ public class DamageArea : MonoBehaviour
 
 		Player player = GetPlayer(other);
 		if (player != null)
-			player.Health -= damage;
+			player.TakeDamage(damage);
 	}
 
 	private void OnStay(Collider2D other)
@@ -33,7 +33,7 @@ public class DamageArea : MonoBehaviour
 
 		Player player = GetPlayer(other);
 		if (player != null)
-			player.Health -= damage * Time.deltaTime;
+			player.TakeDamage(damage * Time.deltaTime);
 	}
 
 	private static Player GetPlayer(Collider2D other)

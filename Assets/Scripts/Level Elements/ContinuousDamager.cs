@@ -20,6 +20,6 @@ public class ContinuousDamager : MonoBehaviour
 	private void Update()
 	{
 		if (player != null)
-			player.Health -= damagePerSecond * Time.deltaTime;
+			player.TakeDamage(damagePerSecond * Time.deltaTime);
 	}
 }

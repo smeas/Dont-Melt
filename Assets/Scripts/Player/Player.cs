@@ -1,5 +1,7 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -11,6 +13,10 @@ public class Player : MonoBehaviour
 	[SerializeField] private float maxScale = 1f;
 	[SerializeField] private float minSpeedScale = 1f;
 	[SerializeField] private float maxSpeedScale = 1.2f;
+
+	[Header("Events")]
+	[SerializeField] private UnityEvent onTakeDamage = null;
+	[SerializeField] private UnityEvent onDie = null;
 
 	private PlayerController controller;
 
@@ -40,6 +46,28 @@ public class Player : MonoBehaviour
 	private void OnValidate()
 	{
 		UpdatePlayerSize();
+	}
+
+	public void Heal(float amount)
+	{
+		Health += amount;
+	}
+
+	public void TakeDamage(float amount)
+	{
+		float newHealth = Mathf.Clamp(health - amount, 0, maxHealth);
+		if (health != newHealth)
+		{
+			health = newHealth;
+			UpdatePlayerSize();
+			onTakeDamage.Invoke();
+
+			if (health <= 0)
+			{
+				onDie.Invoke();
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			}
+		}
 	}
 
 	private void UpdatePlayerSize()

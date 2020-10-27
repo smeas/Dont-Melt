@@ -12,7 +12,7 @@ public class HealthPickup : MonoBehaviour
 			Player player = other.GetComponent<Player>();
 			if (player != null)
 			{
-				player.Health += healthValue;
+				player.Heal(healthValue);
 				Destroy(gameObject);
 			}
 		}
