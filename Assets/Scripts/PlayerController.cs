@@ -7,8 +7,12 @@ public class PlayerController : MonoBehaviour
 	[SerializeField] private float speed = 500;
 	[SerializeField] private float jumpForce = 7;
 	[SerializeField] private float maxSpeed = 10;
+
+	[Header("Collision")]
+	[SerializeField] private new Collider2D collider = null;
 	[SerializeField] private Collider2D groundCollider = null;
 	[SerializeField] private LayerMask groundLayer = default;
+	[SerializeField] private LayerMask waterLayer = default;
 
 	[Header("Events")]
 	[SerializeField] private UnityEvent onJump = null;
@@ -19,6 +23,7 @@ public class PlayerController : MonoBehaviour
 	private bool jump;
 	private float move;
 	private bool isGrounded;
+	private bool isUnderwater;
 	private Vector2 groundNormal = Vector2.up;
 
 	private void Awake()
@@ -32,13 +37,13 @@ public class PlayerController : MonoBehaviour
 		float horizontal = Input.GetAxis("Horizontal");
 		move += horizontal * speed * Time.deltaTime;
 
-		if (isGrounded)
+		if (isGrounded || isUnderwater)
 		{
 			if (Input.GetButtonDown("Jump"))
 				jump = true;
-
-			UpdateGroundNormal();
 		}
+
+		if (isGrounded) UpdateGroundNormal();
 	}
 
 	private void FixedUpdate()
@@ -56,6 +61,7 @@ public class PlayerController : MonoBehaviour
 		}
 
 		isGrounded = groundCollider.IsTouchingLayers(groundLayer);
+		isUnderwater = collider.IsTouchingLayers(waterLayer);
 
 		ApplyMaxSpeed();
 	}

@@ -165,10 +165,14 @@ MonoBehaviour:
   speed: 500
   jumpForce: 7
   maxSpeed: 12
+  collider: {fileID: 2206824196815951222}
   groundCollider: {fileID: 2206824197655307171}
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  waterLayer:
+    serializedVersion: 2
+    m_Bits: 16
   onJump:
     m_PersistentCalls:
       m_Calls: []
