@@ -9,6 +9,7 @@ public class CameraController : MonoBehaviour
 	{
 		Vector3 position = transform.position;
 		position.x = player.position.x;
+		position.y = player.position.y;
 		transform.position = position;
 	}
 }
