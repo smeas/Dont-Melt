@@ -10842,49 +10842,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: Let it snow
       objectReference: {fileID: 0}
-    - target: {fileID: 2521988793798423624, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: VelocityModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: ClampVelocityModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: SizeBySpeedModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: ShapeModule.m_Scale.x
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: SizeBySpeedModule.range.y
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: SizeBySpeedModule.range.x
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: InitialModule.startSize.minScalar
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: InitialModule.startSize.scalar
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2697444006371465337, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: prewarm
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6862922493388393371, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 00d00d5f97988f34ea909a9e06235c5e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea89df7c6f0c4944bab3f7995df57cfb, type: 3}
