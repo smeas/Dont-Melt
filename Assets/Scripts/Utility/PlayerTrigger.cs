@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class OnTriggerEvent : MonoBehaviour
+public class PlayerTrigger : MonoBehaviour
 {
 	[SerializeField] private bool onlyTriggerOnce = false;
 	[SerializeField] private UnityEvent onTriggerEnter = null;
@@ -12,8 +12,10 @@ public class OnTriggerEvent : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D other)
 	{
 		if (onlyTriggerOnce && hasTriggered) return;
-
-		onTriggerEnter.Invoke();
-		hasTriggered = true;
+		if (other.CompareTag("Player"))
+		{
+			onTriggerEnter.Invoke();
+			hasTriggered = true;
+		}
 	}
 }
