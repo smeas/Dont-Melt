@@ -34,6 +34,10 @@ public class PlayerController : MonoBehaviour
 		set => speedScale = value;
 	}
 
+	public bool IsGrounded => isGrounded;
+
+	public bool IsUnderwater => isUnderwater;
+
 	private void Awake()
 	{
 		rigidbody = GetComponent<Rigidbody2D>();

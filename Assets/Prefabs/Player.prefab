@@ -152,6 +152,12 @@ MonoBehaviour:
   maxScale: 1.4
   minSpeedScale: 1
   maxSpeedScale: 1.3
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  onDie:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2206824196815951224
 MonoBehaviour:
   m_ObjectHideFlags: 0
