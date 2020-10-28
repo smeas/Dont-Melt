@@ -8,7 +8,7 @@ public class LoadScene : MonoBehaviour
     [SerializeField] private float transitionTime = 1f;
     [Header("Scene names")]
     [Tooltip("Name of the scene to load. Make sure the scene is added in the build settings.")]
-    public string gameScene = "SampleScene";
+    public string gameScene = "Main";
 
     public void LoadGame()
     {
@@ -33,6 +33,6 @@ public class LoadScene : MonoBehaviour
     IEnumerator LoadLevel(string levelName)
     {
         yield return new WaitForSeconds(transitionTime);
-        SceneManager.LoadScene(gameScene, LoadSceneMode.Single);
+        SceneManager.LoadScene(levelName, LoadSceneMode.Single);
     }
 }

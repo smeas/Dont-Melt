@@ -4945,7 +4945,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de53170796cd59743a52a7d0f53e2eba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animation: SnowFadeOut
+  particle: {fileID: 2000333808219172134}
+  particleStartTime: 1
   animator: {fileID: 1047026775}
 --- !u!1 &2000333809865037950
 GameObject:
@@ -5005,7 +5006,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 0

@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class LevelStart : MonoBehaviour
 {
-    [SerializeField] private string animation = "SnowFadeOut";
+    [SerializeField] private ParticleSystem particle;
+    [SerializeField] private float particleStartTime = 1f;
+    [SerializeField] private readonly string animation = "SnowFadeOut";
     [SerializeField] private Animator animator;
     void Start()
     {
-        if (animator == null)
-            Debug.LogError("Missing animation.");
+        if (animator == null && particle == null)
+            Debug.LogError("Missing something.");
 
         animator.Play(animation);
+        particle.Simulate(particleStartTime);
+        particle.Play();
         Destroy(this);
     }
 }
