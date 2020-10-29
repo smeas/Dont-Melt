@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -17,25 +18,62 @@ public class SetAudio : MonoBehaviour
         if (audioMixer == null)
             Debug.LogError("Missing Audio Mixer");
 
-        if (audioMixer.GetFloat("masterVolume", out float value))
-            master.value = value;
-
-        if (audioMixer.GetFloat("musicVolume", out value))
-            music.value = value;
-
-        if (audioMixer.GetFloat("sfxVolume", out value))
-            effects.value = value;
+        SetLinearVolume("masterVolume", master.value = PlayerPrefs.GetFloat("masterVolume", 1));
+        SetLinearVolume("musicVolume", music.value = PlayerPrefs.GetFloat("musicVolume", 1));
+        SetLinearVolume("sfxVolume", effects.value = PlayerPrefs.GetFloat("sfxVolume", 1));
     }
+
+    private void OnDestroy()
+    {
+        PlayerPrefs.SetFloat("masterVolume", master.value);
+        PlayerPrefs.SetFloat("musicVolume", music.value);
+        PlayerPrefs.SetFloat("sfxVolume", effects.value);
+        PlayerPrefs.Save();
+    }
+
     public void SetMasterVolume()
     {
-        audioMixer.SetFloat("masterVolume", master.value);
+        SetLinearVolume("masterVolume", master.value);
     }
+
     public void SetMusicVolume()
     {
-        audioMixer.SetFloat("musicVolume", music.value);
+        SetLinearVolume("musicVolume", music.value);
     }
+
     public void SetEffectsVolume()
     {
-        audioMixer.SetFloat("sfxVolume", effects.value);
+        SetLinearVolume("sfxVolume", effects.value);
+    }
+
+    private float GetLinearVolume(string groupName)
+    {
+        if (audioMixer.GetFloat(groupName, out float value))
+            return DecibelsToLinear(value);
+        return 1;
+    }
+
+    private void SetLinearVolume(string groupName, float value)
+    {
+        audioMixer.SetFloat(groupName, LinearToDecibels(value));
+    }
+
+
+    //  20 dB <=> 10
+    //   0 dB <=> 1
+    // -80 dB <=> 0.0001
+    // https://en.wikipedia.org/wiki/Decibel
+    private static float DecibelsToLinear(float db)
+    {
+        return Mathf.Pow(10, db / 20);
+    }
+
+    private static float LinearToDecibels(float linear)
+    {
+        const float min = 0.0001f;
+        if (linear < min)
+            linear = min;
+
+        return 20 * Mathf.Log10(linear);
     }
 }
