@@ -17,6 +17,7 @@ public class Player : MonoBehaviour
 	[Header("Events")]
 	[SerializeField] private UnityEvent onTakeDamage = null;
 	[SerializeField] private UnityEvent onDie = null;
+	[SerializeField] private UnityEvent onHealthChange = null;
 
 	private PlayerController controller;
 
@@ -25,7 +26,10 @@ public class Player : MonoBehaviour
 		get => health;
 		set
 		{
-			health = Mathf.Clamp(value, 0, maxHealth);
+			float newHealth = Mathf.Clamp(value, 0, maxHealth);
+			if (health == newHealth) return;
+			health = newHealth;
+			onHealthChange.Invoke();
 			UpdatePlayerSize();
 		}
 	}
@@ -40,12 +44,12 @@ public class Player : MonoBehaviour
 	private void Start()
 	{
 		controller = GetComponent<PlayerController>();
-		UpdatePlayerSize();
+		Health = health;
 	}
 
 	private void OnValidate()
 	{
-		UpdatePlayerSize();
+		Health = health;
 	}
 
 	public void Heal(float amount)
@@ -58,8 +62,7 @@ public class Player : MonoBehaviour
 		float newHealth = Mathf.Clamp(health - amount, 0, maxHealth);
 		if (health != newHealth)
 		{
-			health = newHealth;
-			UpdatePlayerSize();
+			Health = newHealth;
 			onTakeDamage.Invoke();
 
 			if (health <= 0)
