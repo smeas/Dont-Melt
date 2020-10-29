@@ -84,8 +84,12 @@ public class PlayerController : MonoBehaviour
 			averageImpactNormal += collision.GetContact(i).normal;
 		averageImpactNormal /= collision.contactCount;
 
+		// If we didn't slow down in the direction of the collision it's not an impact.
+		if (Vector2.Dot(rigidbody.velocity, -averageImpactNormal) >= 0.1f)
+			return;
+
 		// The impact power is the relative velocity in the direction of the impact normal.
-		float impactPower = Vector2.Dot(collision.relativeVelocity, averageImpactNormal);
+		float impactPower = Mathf.Abs(Vector2.Dot(collision.relativeVelocity, averageImpactNormal));
 		if (impactPower >= minImpactPowerToRegister)
 			onImpact.Invoke();
 	}
