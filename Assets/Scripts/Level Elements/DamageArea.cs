@@ -12,32 +12,30 @@ public class DamageArea : MonoBehaviour
 
 	[SerializeField] private DamageMode mode = DamageMode.Single;
 	[SerializeField] private float damage = 10;
+	[SerializeField] private float damageCooldown = 0;
 
-	private void OnTriggerEnter2D(Collider2D other) => OnEnter(other);
-	private void OnCollisionEnter2D(Collision2D collision) => OnEnter(collision.collider);
-	private void OnTriggerStay2D(Collider2D other) => OnStay(other);
-	private void OnCollisionStay2D(Collision2D collision) => OnStay(collision.collider);
+	private float cooldownTimer;
 
-	private void OnEnter(Collider2D other)
+	private void OnTriggerEnter2D(Collider2D other) => OnCollisionEvent(other, true);
+	private void OnCollisionEnter2D(Collision2D collision) => OnCollisionEvent(collision.collider, true);
+	private void OnTriggerStay2D(Collider2D other) => OnCollisionEvent(other, false);
+	private void OnCollisionStay2D(Collision2D collision) => OnCollisionEvent(collision.collider, false);
+
+	private void Update()
 	{
-		if (mode != DamageMode.Single) return;
-
-		Player player = GetPlayer(other);
-		if (player != null)
-			player.TakeDamage(damage);
+		cooldownTimer = Mathf.Max(0, cooldownTimer - Time.deltaTime);
 	}
 
-	private void OnStay(Collider2D other)
+	private void OnCollisionEvent(Collider2D other, bool isEnter)
 	{
-		if (mode != DamageMode.Continuous) return;
+		if (isEnter != (mode == DamageMode.Single)) return; // I'm sorry...
+		if (cooldownTimer != 0) return;
 
-		Player player = GetPlayer(other);
-		if (player != null)
-			player.TakeDamage(damage * Time.deltaTime);
-	}
-
-	private static Player GetPlayer(Collider2D other)
-	{
-		return other.CompareTag("Player") ? other.GetComponent<Player>() : null;
+		if (other.CompareTag("Player"))
+		{
+			cooldownTimer = damageCooldown;
+			Player player = other.GetComponent<Player>();
+			player.TakeDamage(isEnter ? damage : damage * Time.deltaTime);
+		}
 	}
 }
