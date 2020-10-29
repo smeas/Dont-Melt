@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 736676162099103651}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DoorSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4850651532395931976}
   - component: {fileID: 2435816578151029940}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: basepack_tiles_spritesheet_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
