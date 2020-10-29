@@ -110,11 +110,4 @@ public class PlayerController : MonoBehaviour
 		if (maxVelocity.y > 0) currentVelocity.y = Mathf.Clamp(currentVelocity.y, -maxVelocity.y, maxVelocity.y);
 		rigidbody.velocity = currentVelocity;
 	}
-
-	// DEBUG
-	// private void OnDrawGizmos()
-	// {
-	// 	Vector3 right = -Vector2.Perpendicular(groundNormal);
-	// 	Debug.DrawRay(transform.position, right);
-	// }
 }
