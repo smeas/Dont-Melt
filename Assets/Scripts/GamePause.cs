@@ -37,7 +37,8 @@ public class GamePause : MonoBehaviour
     public void RestartLevel()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        MakeInvisable(false);
+        StartCoroutine(RestartScene());
     }
     
     public void ReturnToMainMenu()
@@ -70,5 +71,11 @@ public class GamePause : MonoBehaviour
     {
         yield return new WaitForSeconds(transitionTime);
         SceneManager.LoadScene(levelName, LoadSceneMode.Single);
+    }
+
+    IEnumerator RestartScene()
+    {
+        yield return new WaitForSeconds(transitionTime);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name, LoadSceneMode.Single);
     }
 }
