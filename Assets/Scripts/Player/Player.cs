@@ -15,9 +15,9 @@ public class Player : MonoBehaviour
 	[SerializeField] private float maxSpeedScale = 1.2f;
 
 	[Header("Events")]
+	[SerializeField] private UnityEvent onHealthChange = null;
 	[SerializeField] private UnityEvent onTakeDamage = null;
 	[SerializeField] private UnityEvent onDie = null;
-	[SerializeField] private UnityEvent onHealthChange = null;
 
 	private PlayerController controller;
 
@@ -27,10 +27,12 @@ public class Player : MonoBehaviour
 		set
 		{
 			float newHealth = Mathf.Clamp(value, 0, maxHealth);
-			if (health == newHealth) return;
-			health = newHealth;
-			onHealthChange.Invoke();
-			UpdatePlayerSize();
+			if (health != newHealth)
+			{
+				health = newHealth;
+				onHealthChange.Invoke();
+				UpdatePlayerSize();
+			}
 		}
 	}
 
@@ -40,6 +42,12 @@ public class Player : MonoBehaviour
 	/// A value between zero and one (inclusive) representing the percentage of health left.
 	/// </summary>
 	public float HealthFraction => Health / MaxHealth;
+
+	public UnityEvent OnTakeDamage => onTakeDamage;
+
+	public UnityEvent OnDie => onDie;
+
+	public UnityEvent OnHealthChange => onHealthChange;
 
 	private void Start()
 	{

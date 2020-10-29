@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -9,6 +10,19 @@ public class UIHealth : MonoBehaviour
     [SerializeField] private Player playerScript;
     [SerializeField] private RectTransform healthBar;
     private float startSize = -1;
+
+    private void OnEnable()
+    {
+        if (playerScript == null)
+            playerScript = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+
+        playerScript.OnHealthChange.AddListener(UpdateHealth);
+    }
+
+    private void OnDisable()
+    {
+        playerScript.OnHealthChange.RemoveListener(UpdateHealth);
+    }
 
     private void Start()
     {
@@ -22,6 +36,5 @@ public class UIHealth : MonoBehaviour
             startSize = healthBar.sizeDelta.x;
 
         healthBar.sizeDelta = new Vector2(Mathf.Round(playerScript.HealthFraction * startSize), healthBar.sizeDelta.y);
-        Debug.Log(playerScript.HealthFraction);
     }
 }
