@@ -8,6 +8,9 @@ TextureImporter:
   - first:
       213: -8830228851826522168
     second: basepack_enemies_spritesheet_1
+  - first:
+      213: 1629386405675282663
+    second: basepack_enemies_spritesheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -172,7 +175,7 @@ TextureImporter:
         width: 65
         height: 66
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -180,6 +183,27 @@ TextureImporter:
       bones: []
       spriteID: 8c78971d4a9b47580800000000000000
       internalID: -8830228851826522168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: basepack_enemies_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 19
+        width: 104
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e030289d4ebc9610800000000000000
+      internalID: 1629386405675282663
       vertices: []
       indices: 
       edges: []
