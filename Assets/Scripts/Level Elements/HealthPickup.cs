@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class HealthPickup : MonoBehaviour
 {
 	[SerializeField] private int healthValue = 5;
+	[SerializeField] private AudioSource audioSource;
 	[SerializeField] private UnityEvent onPickup = null;
 
 	private void OnTriggerEnter2D(Collider2D other)
@@ -15,9 +16,17 @@ public class HealthPickup : MonoBehaviour
 			if (player != null)
 			{
 				player.Heal(healthValue);
+				PlaySound();
 				onPickup.Invoke();
 				Destroy(gameObject);
 			}
 		}
+	}
+
+	private void PlaySound()
+	{
+		audioSource.Play();
+		audioSource.transform.parent = null;
+		Destroy(audioSource.gameObject, audioSource.clip.length);
 	}
 }
