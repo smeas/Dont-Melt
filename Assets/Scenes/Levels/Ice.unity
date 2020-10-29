@@ -21286,18 +21286,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 4929903362500840906, guid: c1b1745332dd62242859e8c0eabee038, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4929903362500840906, guid: c1b1745332dd62242859e8c0eabee038, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4929903362500840906, guid: c1b1745332dd62242859e8c0eabee038, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4929903362500840909, guid: c1b1745332dd62242859e8c0eabee038, type: 3}
       propertyPath: m_Name
       value: Polar Bear
