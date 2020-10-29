@@ -28,7 +28,7 @@ public class DamageArea : MonoBehaviour
 
 	private void OnCollisionEvent(Collider2D other, bool isEnter)
 	{
-		if (isEnter != (mode == DamageMode.Single)) return; // I'm sorry...
+		if (isEnter != (mode == DamageMode.Single)) return;
 		if (cooldownTimer != 0) return;
 
 		if (other.CompareTag("Player"))
