@@ -5,7 +5,7 @@ using UnityEngine.Events;
 public class HealthPickup : MonoBehaviour
 {
 	[SerializeField] private int healthValue = 5;
-	[SerializeField] private UnityEvent onPickup;
+	[SerializeField] private UnityEvent onPickup = null;
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{

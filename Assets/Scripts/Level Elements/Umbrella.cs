@@ -5,14 +5,19 @@ using UnityEngine;
 public class Umbrella : MonoBehaviour
 {
 	[SerializeField] private float gravityScale = 0.2f;
+	[SerializeField] private float drag = 0.5f;
 	[SerializeField] private float destroyDelay = 10;
 
 	private new Rigidbody2D rigidbody;
 	private bool isPlayerMounted;
 	private bool isDropped;
+	private Transform playerTransform;
 	private Rigidbody2D playerRigidbody;
 	private PlayerController playerController;
+
+	private Vector3 grabOffset;
 	private float oldGravityScale;
+	private float oldDrag;
 
 	private void Start()
 	{
@@ -31,7 +36,7 @@ public class Umbrella : MonoBehaviour
 	{
 		if (isPlayerMounted)
 		{
-			//transform.position = playerRigidbody.position;
+			transform.position = playerRigidbody.transform.position + grabOffset;
 
 			if (playerController.IsGrounded)
 				DetachPlayer();
@@ -41,26 +46,28 @@ public class Umbrella : MonoBehaviour
 
 	private void AttachPlayer(Collider2D player)
 	{
-		playerRigidbody = player.GetComponent<Rigidbody2D>();
+		playerTransform = player.transform;
+		playerRigidbody = player.attachedRigidbody;
 		playerController = player.GetComponent<PlayerController>();
 		isPlayerMounted = true;
 
 		oldGravityScale = playerRigidbody.gravityScale;
+		oldDrag = playerRigidbody.drag;
 		playerRigidbody.gravityScale = gravityScale;
+		playerRigidbody.drag = drag;
 
-		transform.parent = playerRigidbody.transform;
+		grabOffset = transform.position - playerTransform.position;
 		rigidbody.isKinematic = true;
 	}
 
 	private void DetachPlayer()
 	{
 		playerRigidbody.gravityScale = oldGravityScale;
-		playerRigidbody = null;
-		playerController = null;
+		playerRigidbody.drag = oldDrag;
 		isPlayerMounted = false;
 		isDropped = true;
 
-		transform.parent = null;
+		rigidbody.velocity = playerRigidbody.velocity;
 		rigidbody.isKinematic = false;
 		Destroy(gameObject, destroyDelay);
 	}

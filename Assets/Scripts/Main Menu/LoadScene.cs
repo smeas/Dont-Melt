@@ -1,6 +1,9 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.Serialization;
 using UnityEngine.SceneManagement;
 
 public class LoadScene : MonoBehaviour
@@ -10,19 +13,10 @@ public class LoadScene : MonoBehaviour
     [Tooltip("Name of the scene to load. Make sure the scene is added in the build settings.")]
     public string gameScene = "Main";
 
+
     public void LoadGame()
     {
         StartCoroutine(LoadLevel(gameScene));
-    }
-
-    public void SelectLevel()
-    {
-        Debug.Log("Not implemented yet");
-    }
-
-    public void Settings()
-    {
-        Debug.Log("Not implemented yet");
     }
 
     public void Exit()
