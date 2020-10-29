@@ -41,7 +41,6 @@ public class PlayerController : MonoBehaviour
 	private void Awake()
 	{
 		rigidbody = GetComponent<Rigidbody2D>();
-		onImpact.Invoke();
 	}
 
 	private void Update()
