@@ -2,10 +2,9 @@
 
 public class ContinuousDamager : MonoBehaviour
 {
-	[SerializeField, Tooltip("The player to damage. (optional)")]
-	private Player player = null;
-
 	[SerializeField] private float damagePerSecond = 1;
+
+	private Player player;
 
 	private void OnEnable()
 	{
