@@ -16,6 +16,15 @@ public class SetAudio : MonoBehaviour
     {
         if (audioMixer == null)
             Debug.LogError("Missing Audio Mixer");
+
+        if (audioMixer.GetFloat("masterVolume", out float value))
+            master.value = value;
+
+        if (audioMixer.GetFloat("musicVolume", out value))
+            music.value = value;
+
+        if (audioMixer.GetFloat("sfxVolume", out value))
+            effects.value = value;
     }
     public void SetMasterVolume()
     {
