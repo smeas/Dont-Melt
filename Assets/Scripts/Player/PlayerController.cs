@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
 		isGrounded = groundCollider.IsTouchingLayers(groundLayer);
 		isUnderwater = collider.IsTouchingLayers(waterLayer);
 
-		ApplyMaxSpeed();
+		LimitMaxSpeed();
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision)
@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	private void ApplyMaxSpeed()
+	private void LimitMaxSpeed()
 	{
 		Vector2 currentVelocity = rigidbody.velocity;
 		if (maxVelocity.x > 0) currentVelocity.x = Mathf.Clamp(currentVelocity.x, -maxVelocity.x, maxVelocity.x);
