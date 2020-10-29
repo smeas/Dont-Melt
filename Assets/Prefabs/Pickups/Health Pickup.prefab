@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55369d91fe4c43ceaa5c07483851d81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthValue: 15
+  healthValue: 20
   audioSource: {fileID: 3950255075389942817}
   onPickup:
     m_PersistentCalls:

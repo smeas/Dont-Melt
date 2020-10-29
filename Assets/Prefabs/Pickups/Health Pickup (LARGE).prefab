@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1910318380985062819, guid: 4545f0e3bb9aa064dbbc2c9f27f33e23, type: 3}
       propertyPath: healthValue
-      value: 30
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4696666870587067266, guid: 4545f0e3bb9aa064dbbc2c9f27f33e23, type: 3}
       propertyPath: m_LocalScale.x
