@@ -4595,14 +4595,6 @@ PrefabInstance:
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 1398561541}
-    - target: {fileID: 44888010210946319, guid: ad45196be6dafbb44add80ff0f60aaf2, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 44888010210946319, guid: ad45196be6dafbb44add80ff0f60aaf2, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 800
-      objectReference: {fileID: 0}
     - target: {fileID: 44888010795451571, guid: ad45196be6dafbb44add80ff0f60aaf2, type: 3}
       propertyPath: m_Camera
       value: 
@@ -4654,14 +4646,6 @@ PrefabInstance:
     - target: {fileID: 4326031340883804103, guid: ad45196be6dafbb44add80ff0f60aaf2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6367465621416083681, guid: ad45196be6dafbb44add80ff0f60aaf2, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1500
-      objectReference: {fileID: 0}
-    - target: {fileID: 6367465621416083681, guid: ad45196be6dafbb44add80ff0f60aaf2, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 6367465621775165789, guid: ad45196be6dafbb44add80ff0f60aaf2, type: 3}
       propertyPath: m_Camera
