@@ -14,7 +14,12 @@ public class LoadScene : MonoBehaviour
     public string gameScene = "Main";
     private string iceScene = "Ice";
     private string lavaScene = "Lava";
+    private string menuScene = "Menu";
 
+    public void LoadMainMenu()
+    {
+        StartCoroutine(LoadLevel(menuScene));
+    }
 
     public void LoadGame()
     {

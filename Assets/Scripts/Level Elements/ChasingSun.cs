@@ -7,10 +7,12 @@ public class ChasingSun : MonoBehaviour
 	[SerializeField] private float maxSpeed = 10;
 	[SerializeField] private float smoothTime = 1;
 	[SerializeField] private float damagePerSecond = 10;
+	[SerializeField] private Transform rays;
 
 	private Player player;
 	private Transform playerTransform;
 	private Vector3 offsetFromPlayer;
+	private Vector3 rayDirection;
 	private Vector3 currentVelocity;
 	private Vector3 raycastHitPoint;
 	private bool raycastHitPlayer;
@@ -28,6 +30,11 @@ public class ChasingSun : MonoBehaviour
 	{
 		Vector3 targetPosition = playerTransform.position + offsetFromPlayer;
 		transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref currentVelocity, smoothTime, maxSpeed);
+
+		rayDirection = playerTransform.position - transform.position;
+
+		float rayAngle = Mathf.Atan2(rayDirection.y, rayDirection.x) * Mathf.Rad2Deg;
+		rays.eulerAngles = new Vector3(0, 0, rayAngle);
 
 		UpdateRaycast();
 
@@ -47,7 +54,7 @@ public class ChasingSun : MonoBehaviour
 	{
 		raycastHitPlayer = false;
 
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, -offsetFromPlayer, 100, layerMask);
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, rayDirection, 100, layerMask);
 		if (hit.collider != null)
 		{
 			if (hit.collider.CompareTag("Player"))
