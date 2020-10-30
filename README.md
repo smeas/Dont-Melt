@@ -1,9 +1,9 @@
 # Don't Melt
 
 ### Group project by:
-- [Jonatan Johansson](https://github.com/smeas)
-- [Robin Vondark](https://github.com/RobinVondrak)
-- [Daniel Nielsen](https://github.com/danielalexandernielsen)
+- [Jonatan Johansson](https://github.com/smeas) - Programming, Level Design
+- [Robin Vondark](https://github.com/RobinVondrak) - Programming, UI Design
+- [Daniel Nielsen](https://github.com/danielalexandernielsen) - Programming, Level Design
 
 <img src="https://github.com/smeas/Dont-Melt/blob/master/dontmelt_screenshot.png?raw=true">
 
