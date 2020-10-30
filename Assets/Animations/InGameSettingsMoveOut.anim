@@ -70,7 +70,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Canvas/Settings
+    path: Canvas/Settings Audio
     classID: 224
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -89,7 +89,7 @@ AnimationClip:
       customType: 28
       isPPtrCurve: 0
     - serializedVersion: 2
-      path: 2325260717
+      path: 3843285715
       attribute: 1460864421
       script: {fileID: 0}
       typeID: 224
@@ -170,7 +170,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_AnchoredPosition.x
-    path: Canvas/Settings
+    path: Canvas/Settings Audio
     classID: 224
     script: {fileID: 0}
   m_EulerEditorCurves: []
