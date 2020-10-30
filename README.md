@@ -13,8 +13,8 @@ https://miro.com/app/board/o9J_khGaYWA=/
 
 
 ### Credits
-Music 
+Music  
 https://www.scottbuckley.com.au/
 
-Art & Sound Effects
+Art & Sound Effects  
 https://www.kenney.nl/
