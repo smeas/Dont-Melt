@@ -915,7 +915,7 @@ GameObject:
   - component: {fileID: 122214155}
   - component: {fileID: 122214154}
   - component: {fileID: 122214156}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Effector (lava)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1627,7 +1627,7 @@ GameObject:
   - component: {fileID: 257971050}
   - component: {fileID: 257971051}
   - component: {fileID: 257971052}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Effector (water)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31518,7 +31518,7 @@ GameObject:
   - component: {fileID: 1842024439}
   - component: {fileID: 1842024441}
   - component: {fileID: 1842024440}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Water
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33378,7 +33378,7 @@ GameObject:
   - component: {fileID: 1915837168}
   - component: {fileID: 1915837170}
   - component: {fileID: 1915837169}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}

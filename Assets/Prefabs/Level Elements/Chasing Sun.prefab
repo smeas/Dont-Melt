@@ -183,5 +183,5 @@ MonoBehaviour:
     m_Bits: 1280
   maxSpeed: 10
   smoothTime: 0.2
-  damagePerSecond: 10
+  damagePerSecond: 8
   rays: {fileID: 833829405}

@@ -12,18 +12,23 @@ public class WalkingCritter : MonoBehaviour
     [SerializeField] private bool flipSpriteToggle = true;
     private SpriteRenderer sprite;
 
+    private Vector3 leftPoint;
+    private Vector3 rightPoint;
 
     private void Start()
     {
         sprite = gameObject.GetComponent<SpriteRenderer>();
         sprite.flipX = flipSpriteToggle;
+
+        leftPoint = LeftObject.transform.position;
+        rightPoint = RightObject.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if ((transform.position.x < LeftObject.transform.position.x) || (transform.position.x > RightObject.transform.position.x))
+        if ((transform.position.x < leftPoint.x) || (transform.position.x > rightPoint.x))
         {
             walkingSpeed *= -1;
             FlipSprite();
