@@ -1,6 +1,6 @@
 # Don't Melt
 
-### Group project by
+### Group project by:
 - [Jonatan Johansson](https://github.com/smeas)
 - [Robin Vondark](https://github.com/RobinVondrak)
 - [Daniel Nielsen](https://github.com/danielalexandernielsen)
