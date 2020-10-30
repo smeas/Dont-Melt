@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+// Jonatan
 public class OnCollision : MonoBehaviour
 {
 	[SerializeField] private bool oneShot = false;

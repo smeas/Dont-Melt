@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+// Jonatan
 public class ChasingSun : MonoBehaviour
 {
 	[SerializeField] private LayerMask layerMask = -1;

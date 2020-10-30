@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+// Jonatan
 [RequireComponent(typeof(Rigidbody2D))]
 public class Umbrella : MonoBehaviour
 {

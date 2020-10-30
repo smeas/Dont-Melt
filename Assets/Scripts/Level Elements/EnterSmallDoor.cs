@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 
+// Daniel
 public class EnterSmallDoor : MonoBehaviour
 {
     private Player player;

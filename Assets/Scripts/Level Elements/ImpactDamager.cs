@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+// Jonatan
 public class ImpactDamager : MonoBehaviour
 {
 	[SerializeField] private float damage = 10;

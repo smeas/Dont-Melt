@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+// Jonatan
 public class PolarBear : MonoBehaviour
 {
 	[SerializeField] private Vector2 speed;

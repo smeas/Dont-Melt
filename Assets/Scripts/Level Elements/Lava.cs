@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Daniel
 public class Lava : MonoBehaviour
 {
 

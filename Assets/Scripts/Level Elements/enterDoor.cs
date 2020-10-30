@@ -5,6 +5,7 @@ using Cinemachine;
 using UnityEngine;
 using UnityEngine.Events;
 
+// Daniel + Jonatan
 public class EnterDoor : MonoBehaviour
 {
     private Player player;

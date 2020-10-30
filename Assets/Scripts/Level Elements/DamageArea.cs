@@ -1,6 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
+// Jonatan
 [RequireComponent(typeof(Collider2D))]
 public class DamageArea : MonoBehaviour
 {

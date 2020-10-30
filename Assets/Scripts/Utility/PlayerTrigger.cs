@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
+// Jonatan
 public class PlayerTrigger : MonoBehaviour
 {
 	[SerializeField] private bool onlyTriggerOnce = false;

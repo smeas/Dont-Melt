@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// Jonatan
 public class ContinuousDamager : MonoBehaviour
 {
 	[SerializeField] private float damagePerSecond = 1;

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
+// Jonatan
 [RequireComponent(typeof(Collider2D))]
 public class HealthPickup : MonoBehaviour
 {

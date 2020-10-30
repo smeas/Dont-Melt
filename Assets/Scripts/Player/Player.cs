@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
+// Jonatan
 public class Player : MonoBehaviour
 {
 	[SerializeField] private float health = 100;
