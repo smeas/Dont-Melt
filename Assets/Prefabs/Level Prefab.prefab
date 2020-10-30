@@ -4201,6 +4201,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 2000333809865037921, guid: c145fb39d53e07840853e9768892050f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000333809865037921, guid: c145fb39d53e07840853e9768892050f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 800
+      objectReference: {fileID: 0}
     - target: {fileID: 2000333809865037950, guid: c145fb39d53e07840853e9768892050f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -4222,6 +4230,14 @@ PrefabInstance:
     - target: {fileID: 4827907553363817798, guid: 50a5d6e71857a0541b50b2ae8a92c859, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827907553931476992, guid: 50a5d6e71857a0541b50b2ae8a92c859, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4827907553931476992, guid: 50a5d6e71857a0541b50b2ae8a92c859, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 4827907553931477023, guid: 50a5d6e71857a0541b50b2ae8a92c859, type: 3}
       propertyPath: m_IsActive
