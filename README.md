@@ -13,8 +13,8 @@ https://miro.com/app/board/o9J_khGaYWA=/
 
 
 ### Credits
-Music & Sound Effects
+Music & Sound Effects  
 https://www.scottbuckley.com.au/
 
-Sprites
+Sprites  
 https://www.kenney.nl/assets/platformer-art-deluxe
