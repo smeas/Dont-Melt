@@ -3,11 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EnterDoor : MonoBehaviour
 {
     private Player player;
     public GameObject connectedDoor;
+    public UnityEvent onEnter;
 
     private bool keyDown;
     private bool atDoor;
@@ -55,6 +57,16 @@ public class EnterDoor : MonoBehaviour
             virtualCamera.OnTargetObjectWarped(player.transform, offset);
 
             keyDown = false;
+            onEnter.Invoke();
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (connectedDoor != null)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(transform.position, connectedDoor.transform.position);
         }
     }
 }
