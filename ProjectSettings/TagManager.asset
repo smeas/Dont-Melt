@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Door (in sky)
   - Door (by lava)
+  - Sun
   layers:
   - Default
   - TransparentFX
@@ -39,7 +40,6 @@ TagManager:
   - 
   - 
   - 
-  - 
   m_SortingLayers:
   - name: Skybox
     uniqueID: 1518997969
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Shadows
+    uniqueID: 3226646815
     locked: 0
   - name: Foreground
     uniqueID: 3222260571

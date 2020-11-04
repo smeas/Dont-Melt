@@ -23,6 +23,8 @@ public class ChasingSun : MonoBehaviour
 	private new SpriteRenderer renderer;
 	private SpriteRenderer raysRenderer;
 
+	public Vector2 Direction => rayDirection.normalized;
+
 	private void Start()
 	{
 		GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
