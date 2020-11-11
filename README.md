@@ -2,7 +2,7 @@
 
 ### Group project by:
 - [Jonatan Johansson](https://github.com/smeas) - Programming, Level Design
-- [Robin Vondark](https://github.com/RobinVondrak) - Programming, UI Design
+- [Robin Vondrak](https://github.com/RobinVondrak) - Programming, UI Design
 - [Daniel Nielsen](https://github.com/danielalexandernielsen) - Programming, Level Design
 
 ### Screenshots
